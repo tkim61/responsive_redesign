@@ -1,87 +1,76 @@
 <!-- 
-    This template is based off of instructions from 
+    This file and accompanying files are based off of instructions from 
     Easy Tutorials on YouTube https://youtu.be/oYRda7UtuhA
+
+    And off of the bootstrap live coding tutorial from class
  -->
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tab Title</title>
+        <title>Responsive Redesign</title>
         <link rel="stylesheet" href="style.css">
-        <!-- <link font link!> -->
-        <!-- mobile font link!!!! -->
+        <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
         <!-- Header (welcome page?)-->
         <section class="header">
-            <nav>
-                <a href="index.html"><img src="images/logo.png"></a>
-                <div class="nav-links">
-                    <!-- Add mobile icons -->
-                    <ul>
-                        <li><a href="">LINK1</a></li>
-                        <li><a href="">LINK2</a></li>
-                    </ul>
-                </div>
-            </nav>
-        <div class="text-box">
-            <h1>Submission Title</h1>
-            <p>
-                Somebody once told me the world was gonna roll me 
-                <br> I wasn't the sharpest tool in the shed.
-            </p>
-            <a href="" class="hero-btn">BIG BOOTY BUTTON</a>
-        </div>
-
+            <section class="header">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="">Responsive Redesign</a>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="#Problems">Problems</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#LFP">Low-Fi Prototypes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Style-Guide">Visual Design Style Guide</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#HFP">High-Fi Prototypes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="http://highspiritsliquors.com/">Current Site</a></li>
+                                <li class="nav-item"><a class="nav-link" href="link-to-finished-site">New Site</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
         </section>
         <!-- first_thing im showing-->
-        <section class="first_thing">
-            <h1>She was lookin kinda dumb, with her finger and her thumb in the shape of an L on her forehead</h1>
-            <p>Well, the years start comin and they don't stop comin and they don't stop comin</p>
+        <section id=Problems class="Problems">
+            <h1>Problems with the Current Website</h1>
             <div class="row">
-                <div class="item-col">
-                    <h3>Subheader</h3>
-                    <p>fed to the rules but I hit the ground runnin, didn't make sense not to live for fun,
-                        your head gets smart but your brain gets dumb
-                    </p>
+                <div class="screenshot">
+                    <h2>Top of page</h2>
+                    <img src="images/hsogtop.png">
                 </div> 
-                <div class="item-col">
-                    <h3>Subheader2</h3>
-                    <p>so much to do so much to see, what's wrong with takin the backstreets?
-                        you'll never know if you don't go, you'll never shine if you don't glow
-                    </p>
-                </div> 
-                <div class="item-col">
-                    <h3>Subheader3</h3>
-                    <p>hey now, you're an all star, get your game on, go play
-                        hey now, you're a rock star, get your show on, get paid
-                    </p>
-                </div>            
+                <div class="screenshot">
+                    <h2>Bottom of page</h2>
+                    <img src="images/hsogbot.png">
+                </div>
+                <ul>
+                    <li>Most users would probably be looking to find out hours, location, contact info, maybe sale info, but the first three most often</li>
+                    <li>The most important information (hours, location, even about) isn’t readily available and it’s not clear where to find it on first inspection</li>
+                    <li>Main letterhead and most importantly, location, have to be scrolled to</li>
+                    <li>Scrolling action is not smooth and makes the user scroll all the way to the bottom when they might not want to do that</li>
+                    <li>The first image isn’t the store, but prices for what are assumed to be beer
+                        the information isn’t all that helpful if you’re trying to learn about what the store is
+                    </li>
+                    <li>Text below the letterhead, and much of the grey font is tiny, a similar color to the background, and hard to read</li>
+                    <li>The google maps extension doesn't work, it's a nice touch, but is it really needed in this day and age where most people would just open a new tab or use their phone for directions anyway?</li>
+                    <li>WAVE didn’t find any major accessibility issues</li>
+                </ul>
             </div>
         </section>
 
         <!-- second thing -->
-        <section class="second_thing">
-            <h1>all that glitters is gold</h1>
-            <p>only shooting stars break the mold</p>
+        <section id=LFP class="lowfi">
+            <h1>Low-fi Prototypes</h1>
             <div class="row">
-                <div class="item2-col">
-                    <img src="images/lookdowns.jpeg">
-                    <div class="layer">
-                        <h3>LOOKDOWNS</h3>
-                    </div>
+                <div class="lowfi-col">
+                    <img src="images/lowfiRR_desk.jpg">
                 </div>
-                <div class="item2-col">
-                    <img src="images/sunfish.webp">
-                    <div class="layer">
-                        <h3>SUNFISH</h3>
-                    </div>
+                <div class="lowfi-col">
+                    <img src="images/lowfiRR_tab.jpg">
                 </div>
-                <div class="item2-col">
-                    <img src="images/tarpon.jpg">
-                    <div class="layer">
-                        <h3>TARPON</h3>
-                    </div>
+                <div class="lowfi-col">
+                    <img src="images/lowfiRR_mobile.jpg">
                 </div>
             </div>
         </section>
