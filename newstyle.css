@@ -25,127 +25,87 @@
          url('../fonts/comfortaa-v40-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/comfortaa-v40-latin-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
 }
-body{
-    font-family: "Fira Sans", 'normal';
+*{
+    margin:0;
+    padding:0;
+
 }
-.header{
+
+body{
+    font-family: 'Fira Sans', 'normal';
+}
+
+.main{
     min-height: 100vh;
     width: 100%;
+    background-color: #CFCDCD;
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.header img{
-    width: 100%;
-    height: 100%
-}
 
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    text-align: center;
-}
-/* First thing */
-.Problems{
-    width: 100%;
-    margin: none;
-    text-align: center;
-    padding-top: 100px;
-    background-color: beige;
-}
-.row{
-    margin-top: 5%;
+.header{
     display: flex;
-    justify-content: space-evenly;
-}
-.screenshot{
-    flex-basis: 31%; /*like a third*/
-    margin-bottom: 5%;
-    position:relative;
-}
-.screenshot img{
-    width: 120%;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
+    margin-bottom: -2%;
 }
-.screenshot h2{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-.row ul{
-    text-align: left;
+.header img{
+    max-width: 12%;
+    height: auto;
 }
 
-/* Second thing */
-.lowfi{
-    width:100%;
-    margin:auto;
-    text-align: center;
-    background-color: lavender;
+.header h2{
+    font-size: 2vw;
 }
-.lowfi-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow:hidden;
+
+.header h2:hover{
+    color:#7C7A7A
 }
-.lowfi img{
+
+.picture img{
     width: 100%;
-    height: 100%;
-    display: block;
 }
 
-/* third thing */
-.style-guide{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    background: azure;
-}
-.style-guide-figma{
-    flex-basis: 70%; /*like a third*/
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    position:relative;
-}
-.style-guide-figma img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-
-.highfi{
-    width: 100%;
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
-    background: powderblue;
-
-}
-.highfi-item{
-    flex-basis: 90%; /*like half*/
-    border-radius:10px;
-    margin-bottom: 5%;
-    text-align: left;
-    padding: 25px;
-    cursor: pointer;
+.address{
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
-
+    justify-content: center;
 }
-.highfi-item img{
-    width: 100%;
-    height: 100%;
+.address h1{
+    font-size: 5vw;
 }
 
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.text h3{
+    font-size: 1.6vw;
+}
 
-
+/* @media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;    
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:red;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index: 2;
+    }
+    .row{
+        flex-direction: column;
+    }
+} */
 
